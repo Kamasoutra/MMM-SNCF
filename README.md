@@ -52,7 +52,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
         departureStationUIC: "stop_area:OCE:SA:87286005",
         arrivalStationUIC: "stop_area:OCE:SA:87286583",
         apiKey: "", // You must add your API key
-	numberDays: 2,
+	numberJourneys: 2,
         dateFormat: 'dddd HH:mm', // display for example with french locale Jeudi 08:43
         displayCo2: true,
         coverage: "fr-ne",
@@ -74,7 +74,7 @@ The following properties can be configured:
 | `apiKey` | The [SNCF](https://www.digital.sncf.com/startup/api) API key, which can be obtained by creating an SNCF account. <br><br> This value is **REQUIRED**
 | `departureStationUIC` | You need to find your train station and find the [**UIC**](https://ressources.data.sncf.com/explore/dataset/referentiel-gares-voyageurs) of the train station (*not the uic7 column, the UIC*).<br><br> This value is **REQUIRED**
 | `arrivalStationUIC` | You need to find your train station and find the [**UIC**](https://ressources.data.sncf.com/explore/dataset/referentiel-gares-voyageurs) of the train station (*not the uic7 column, the UIC*).<br><br> This value is **REQUIRED**
-| `numberDays` | Number of results per day. <br><br> **Default value:** `1` 
+| `numberJourneys` | Number of results per day. <br><br> **Default value:** `1` 
 | `maxNbTransfers` | Maximum number of transfers in each journey. <br><br> **Default value:** `10` 
 | `displayName` | Display train name and type. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `true`
 | `displayDuration` | Display journey time. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `true`

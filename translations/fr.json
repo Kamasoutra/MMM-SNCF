@@ -10,5 +10,6 @@
 	"duration": "Durée :",
 	"destination": "Destination :",
 	"peculiarities": "Particularités :",
-	"c02": "CO2 émis :"
+	"c02": "CO2 émis :",
+	"significant_delays": "Retards importants" 
 }

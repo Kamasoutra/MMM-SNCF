@@ -18,13 +18,14 @@ Module.register("MMM-SNCF", {
         dateFormat: 'llll',
         retryDelay: 1 * 10 * 1000,
         initialLoadDelay: 0, // start delay seconds.
-        numberDays: 1,
+        numberJourneys: 1,  //
         maxNbTransfers: 10,
         displayDuration: true,
         displayName: true,
         displayDestination: false,
         displayC02: false,
         displayHeaders: true,
+        walkingTimeStart: 0
     },
 
     // Define required scripts.
@@ -56,8 +57,8 @@ Module.register("MMM-SNCF", {
             this.config.arrivalStationUIC = this.config.arriveeUIC;
         }
 
-        if (this.config.trainsdisplayed != null) {
-            this.config.numberDays = this.config.trainsdisplayed;
+        if (this.config.trainsDisplayed != null) {
+            this.config.numberJourneys = this.config.trainsDisplayed;
         }
 
         if (this.config.login != null) {

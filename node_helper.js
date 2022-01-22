@@ -20,7 +20,7 @@ module.exports = NodeHelper.create({
 		* Calls processTransports on succesfull response.
 	*/
     updateTimetable: function () {
-        var url = "https://api.navitia.io/v1/coverage/" + this.config.coverage + "/journeys?from=" + this.config.departureStationUIC + "&to=" + this.config.arrivalStationUIC + "&datetime=" + moment().toISOString() + "&count=" + this.config.numberDays + "&max_nb_transfers=" + this.config.maxNbTransfers;
+        var url = "https://api.navitia.io/v1/coverage/" + this.config.coverage + "/journeys?from=" + this.config.departureStationUIC + "&to=" + this.config.arrivalStationUIC + "&datetime=" + moment().toISOString() + "&count=" + this.config.numberJourneys + "&max_nb_transfers=" + this.config.maxNbTransfers + "&max_walking_duration_to_pt=" + this.config.walkingTimeStart;
 
         if (this.config.debugging) console.log(url);
 
