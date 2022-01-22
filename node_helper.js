@@ -91,6 +91,7 @@ module.exports = NodeHelper.create({
         responseInJson = data.journeys;
 
         // we search if there are disruptions
+        console.log("disruptions : " + data.disruptions)
         if (data.disruptions) {
             disruptions = data.disruptions;
         }

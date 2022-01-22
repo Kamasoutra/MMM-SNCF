@@ -24,6 +24,6 @@
   "dependencies": {
     "unirest": "latest",
     "node-forge": "latest",
-    "xml2js":"latest"
-    }
+    "xml2js": "latest"
+  }
 }

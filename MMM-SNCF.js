@@ -157,6 +157,9 @@ Module.register("MMM-SNCF", {
                 else if (transport.state == "NO_SERVICE") {
                     stateCell.innerHTML = "<span class='deleted'><i class='fa fa-ban' aria-hidden='true'></i>&nbsp" + this.translate("deleted") + "</span>";
                 }
+                else if (transport.state == "SIGNIFICANT_DELAYS") {
+                    stateCell.innerHTML = "<span class='state'><i class='fa fa-exclamation-triangle aria-hidden='true'></i>&nbsp" + this.translate("significant_delays") + "</span>";
+                }
                 else if (transport.state != "") {
                     stateCell.innerHTML = "<span class='state'><i class='fa fa-exclamation-triangle aria-hidden='true'></i>&nbsp" + transport.state + "</span>";
                 }
